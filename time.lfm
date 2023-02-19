@@ -1,0 +1,79 @@
+object Form_Time: TForm_Time
+  Left = 886
+  Height = 124
+  Top = 126
+  Width = 320
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Zeiteinstellung'
+  ClientHeight = 124
+  ClientWidth = 320
+  Position = poMainFormCenter
+  LCLVersion = '1.4.1.0'
+  object Btn_save: TButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 10
+    Height = 25
+    Top = 89
+    Width = 75
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Left = 10
+    BorderSpacing.Bottom = 10
+    Caption = 'speichern'
+    Default = True
+    OnClick = Btn_saveClick
+    TabOrder = 1
+  end
+  object Btn_Cancel: TButton
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 235
+    Height = 25
+    Top = 89
+    Width = 75
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Right = 10
+    BorderSpacing.Bottom = 10
+    Cancel = True
+    Caption = 'Abbruch'
+    OnClick = Btn_CancelClick
+    TabOrder = 2
+  end
+  object SpEdit_Time: TSpinEdit
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Label1
+    AnchorSideTop.Side = asrBottom
+    Left = 10
+    Height = 27
+    Top = 35
+    Width = 68
+    BorderSpacing.Left = 10
+    BorderSpacing.Top = 10
+    MaxValue = 23
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 42
+    Height = 17
+    Top = 8
+    Width = 213
+    Caption = 'Zeit der Zwangstrennung eintragen.'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    AnchorSideLeft.Control = SpEdit_Time
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = SpEdit_Time
+    Left = 83
+    Height = 17
+    Top = 35
+    Width = 22
+    BorderSpacing.Left = 5
+    Caption = 'Uhr'
+    ParentColor = False
+  end
+end

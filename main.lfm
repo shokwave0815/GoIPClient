@@ -1,27 +1,28 @@
 object Form1: TForm1
   Left = 240
-  Height = 381
+  Height = 476
   Top = 128
-  Width = 554
+  Width = 692
   BorderIcons = [biSystemMenu, biMinimize]
   Caption = 'goIP-Client'
-  ClientHeight = 360
-  ClientWidth = 554
+  ClientHeight = 476
+  ClientWidth = 692
+  DesignTimePPI = 120
   Menu = MainMenu1
   OnClose = FormClose
   OnCreate = FormCreate
   OnHide = FormHide
   OnShow = FormShow
   OnWindowStateChange = FormWindowStateChange
-  LCLVersion = '1.5'
+  LCLVersion = '3.0.0.3'
   object GroupBox1: TGroupBox
     Left = 0
-    Height = 105
+    Height = 131
     Top = 0
     Width = 554
     Align = alTop
     Caption = 'Nutzerinformationen'
-    ClientHeight = 86
+    ClientHeight = 112
     ClientWidth = 550
     TabOrder = 0
     object Edit_User: TEdit
@@ -30,13 +31,13 @@ object Form1: TForm1
       AnchorSideTop.Control = Label1
       AnchorSideRight.Control = GroupBox1
       AnchorSideRight.Side = asrBottom
-      Left = 108
+      Left = 135
       Height = 27
-      Top = 10
+      Top = 12
       Width = 432
       Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Left = 10
-      BorderSpacing.Right = 10
+      BorderSpacing.Left = 12
+      BorderSpacing.Right = 12
       TabOrder = 0
     end
     object Edit_PW: TEdit
@@ -44,9 +45,9 @@ object Form1: TForm1
       AnchorSideTop.Control = Label2
       AnchorSideRight.Control = Edit_User
       AnchorSideRight.Side = asrBottom
-      Left = 108
+      Left = 135
       Height = 27
-      Top = 39
+      Top = 49
       Width = 432
       Anchors = [akTop, akLeft, akRight]
       EchoMode = emPassword
@@ -56,12 +57,12 @@ object Form1: TForm1
     object Label1: TLabel
       AnchorSideLeft.Control = GroupBox1
       AnchorSideTop.Control = GroupBox1
-      Left = 10
+      Left = 12
       Height = 17
-      Top = 10
+      Top = 12
       Width = 88
-      BorderSpacing.Left = 10
-      BorderSpacing.Top = 10
+      BorderSpacing.Left = 12
+      BorderSpacing.Top = 12
       Caption = 'Benutzername'
       ParentColor = False
     end
@@ -69,11 +70,11 @@ object Form1: TForm1
       AnchorSideLeft.Control = Label1
       AnchorSideTop.Control = Label1
       AnchorSideTop.Side = asrBottom
-      Left = 10
+      Left = 12
       Height = 17
-      Top = 39
+      Top = 49
       Width = 55
-      BorderSpacing.Top = 12
+      BorderSpacing.Top = 15
       Caption = 'Passwort'
       ParentColor = False
     end
@@ -102,44 +103,44 @@ object Form1: TForm1
   end
   object GroupBox3: TGroupBox
     Left = 0
-    Height = 58
-    Top = 302
+    Height = 72
+    Top = 288
     Width = 554
     Align = alBottom
     Caption = 'Aktionen'
-    ClientHeight = 39
+    ClientHeight = 53
     ClientWidth = 550
     TabOrder = 2
     object Btn_Update: TButton
       AnchorSideLeft.Control = GroupBox3
       AnchorSideBottom.Control = GroupBox3
       AnchorSideBottom.Side = asrBottom
-      Left = 10
-      Height = 25
-      Top = 9
-      Width = 126
+      Left = 12
+      Height = 31
+      Top = 3
+      Width = 158
       Anchors = [akLeft, akBottom]
-      BorderSpacing.Left = 10
-      BorderSpacing.Bottom = 5
+      BorderSpacing.Left = 12
+      BorderSpacing.Bottom = 6
       Caption = 'jetzt aktualisieren'
-      OnClick = Btn_UpdateClick
       TabOrder = 0
+      OnClick = Btn_UpdateClick
     end
     object Btn_Close: TButton
       AnchorSideRight.Control = GroupBox3
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = GroupBox3
       AnchorSideBottom.Side = asrBottom
-      Left = 465
-      Height = 25
-      Top = 9
-      Width = 75
+      Left = 446
+      Height = 31
+      Top = 3
+      Width = 94
       Anchors = [akRight, akBottom]
-      BorderSpacing.Right = 10
-      BorderSpacing.Bottom = 5
+      BorderSpacing.Right = 12
+      BorderSpacing.Bottom = 6
       Caption = 'Schließen'
-      OnClick = MenIt_CloseClick
       TabOrder = 1
+      OnClick = MenIt_CloseClick
     end
   end
   object TrayIcon: TTrayIcon
@@ -1137,12 +1138,12 @@ object Form1: TForm1
       000000000000000000000000000000000001
     }
     OnDblClick = TrayIconDblClick
-    left = 320
-    top = 32
+    Left = 400
+    Top = 40
   end
   object MainMenu1: TMainMenu
-    left = 460
-    top = 32
+    Left = 575
+    Top = 40
     object MenuItem1: TMenuItem
       Caption = '&Datei'
       object MenIt_Close: TMenuItem
@@ -1171,8 +1172,8 @@ object Form1: TForm1
     end
   end
   object PopupMenu1: TPopupMenu
-    left = 461
-    top = 92
+    Left = 576
+    Top = 115
     object MenuItem4: TMenuItem
       Caption = 'Öffnen'
       Default = True
@@ -1189,7 +1190,7 @@ object Form1: TForm1
   object Timer1: TTimer
     Interval = 300000
     OnTimer = IdleTimer1Timer
-    left = 390
-    top = 32
+    Left = 488
+    Top = 40
   end
 end

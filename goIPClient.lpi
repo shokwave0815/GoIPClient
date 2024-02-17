@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
   <ProjectOptions>
-    <Version Value="9"/>
+    <Version Value="12"/>
     <PathDelim Value="\"/>
     <General>
+      <Flags>
+        <CompatibilityMode Value="True"/>
+      </Flags>
       <SessionStorage Value="InProjectDir"/>
-      <MainUnit Value="0"/>
       <Title Value="goIPClient"/>
       <ResourceType Value="res"/>
       <UseXPManifest Value="True"/>
@@ -25,7 +27,7 @@
       <RevisionNr Value="3"/>
       <BuildNr Value="23"/>
       <Language Value="0407"/>
-      <StringTable FileDescription="Aktualisiert die IP für den goIP-Dienst." LegalCopyright="(c)2015 by Ingo Steiniger" ProductName="goIP-Client" ProductVersion=""/>
+      <StringTable FileDescription="Aktualisiert die IP für den goIP-Dienst." LegalCopyright="(c)2015 by Ingo Steiniger" ProductName="goIP-Client"/>
     </VersionInfo>
     <BuildModes Count="2">
       <Item1 Name="debug" Default="True"/>
@@ -50,6 +52,7 @@
           <Linking>
             <Debugging>
               <GenerateDebugInfo Value="False"/>
+              <DebugInfoType Value="dsDwarf3"/>
               <UseLineInfoUnit Value="False"/>
             </Debugging>
             <LinkSmart Value="True"/>
@@ -66,9 +69,10 @@
       <Version Value="2"/>
     </PublishOptions>
     <RunParams>
-      <local>
-        <FormatVersion Value="1"/>
-      </local>
+      <FormatVersion Value="2"/>
+      <Modes Count="1">
+        <Mode0 Name="default"/>
+      </Modes>
     </RunParams>
     <RequiredPackages Count="1">
       <Item1>

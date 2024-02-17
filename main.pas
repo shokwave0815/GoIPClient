@@ -254,7 +254,7 @@ end;
 procedure TForm1.LoadConfig;
 var Conf: TINIFile;
 begin
-  if FileExistsUTF8(ConfDir + 'config.ini') then
+  if FileExists(ConfDir + 'config.ini') then
   begin
     try
       Conf := TINIFile.Create(ConfDir + 'config.ini');
@@ -283,7 +283,7 @@ end;
 procedure TForm1.SaveConfig;
 var Conf:TINIFile;
 begin
-  ForceDirectoriesUTF8(ConfDir);
+  ForceDirectories(ConfDir);
   try
     Conf := TINIFile.Create(ConfDir + 'config.ini');
 
@@ -322,8 +322,8 @@ var URL: string;
 begin
   doneOK := False;
   URL := 'http://www.goip.de/setip?';
-  Params := 'username=' + EncodeURLElement(UTF8ToSys(user)) + '&' +
-            'password=' + EncodeURLElement(UTF8ToSys(password));
+  Params := 'username=' + EncodeURLElement(user) + '&' +
+            'password=' + EncodeURLElement(password);
   if (user <> '') and (password <> '') then
   begin
 
